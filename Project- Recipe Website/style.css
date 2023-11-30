@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+}
+#navList{
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    color:#ffffff ;
+    font-style: italic;
+}
+
+.container{
+    height: fit-content;
+    width:100vw;
+    overflow-x: none;
+    background-color: #fbff90;
+    background-image: linear-gradient(160deg, #fbff90 0%, #fdffcf 100%);
+}
+.navContainer{
+    width: 100vw;
+    min-height: 80px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242,121,1,0.84) 74.4% );
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: rlative;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+#FooterBox{
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242,121,1,0.84) 74.4% );
+}
+#FooterBox p{
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.contentbox{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 30px #ff7b00;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.7rem;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(255, 89, 0);
+}
+.rightBox img{
+    height: 370px;
+    width: 380px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+    font-style: oblique;
+}
+.ingBox{
+    font-size: 1.2rem;
+}
+.InstBox{
+    font-size: 1.1rem;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(56, 51, 51, 0.609);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+   
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    font-size: 1.2rem;
+    color: #ffffff;
+}
